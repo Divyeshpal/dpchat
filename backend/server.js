@@ -26,7 +26,7 @@ const server = http.createServer(app);
 // ======================
 app.use(
   cors({
-    origin: "https://dpchat-backend-usid.onrender.com",
+    origin: "https://dpchat-frontend.onrender.com",
     credentials: true,
   })
 );
