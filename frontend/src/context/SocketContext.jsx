@@ -19,7 +19,7 @@ export const SocketProvider = ({ children }) => {
     if (authUser) {
       console.log("Creating Socket...");
 
-      const socketInstance = io("http://localhost:5000", {
+      const socketInstance = io("https://dpchat-backend-usid.onrender.com", {
         query: {
           userId: authUser.id,
         },
